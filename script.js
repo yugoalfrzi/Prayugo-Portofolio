@@ -3,7 +3,7 @@
 // ==========================
 
 AOS.init({
-    duration: 700,
+    duration: 900,
     easing: 'ease-out-cubic',
     once: false,
     offset: 60,
