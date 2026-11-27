@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Prayugo Alfarizi | Fullstack Developer</title>
+    <meta name="description" content="Prayugo Alfarizi — Fullstack Developer berpengalaman dalam pengembangan aplikasi web, Laravel, PHP, dan MySQL. Tersedia untuk peluang kerja dan kolaborasi.">
+    <meta name="keywords" content="Prayugo Alfarizi, Fullstack Developer, Laravel, PHP, MySQL, Web Developer, Portfolio">
+    <meta name="author" content="Prayugo Alfarizi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://prayugoalfarizi.dev/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Prayugo Alfarizi | Fullstack Developer">
+    <meta property="og:description" content="Fullstack Developer berfokus pada pengembangan aplikasi web, Laravel, PHP, dan MySQL.">
+    <meta property="og:url" content="https://prayugoalfarizi.dev/">
+    <meta property="og:site_name" content="Prayugo Alfarizi Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prayugo Alfarizi | Fullstack Developer">
+    <meta name="twitter:description" content="Fullstack Developer berfokus pada pengembangan aplikasi web, Laravel, PHP, dan MySQL.">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Prayugo Alfarizi",
+        "jobTitle": "Fullstack Developer",
+        "url": "https://prayugoalfarizi.dev/",
+        "sameAs": []
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">PA<span>.</span></a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#home" data-id="Beranda" data-en="Home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-id="Tentang" data-en="About">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills" data-id="Keahlian" data-en="Skills">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-id="Proyek" data-en="Projects">Proyek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience" data-id="Pengalaman" data-en="Experience">Pengalaman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-id="Kontak" data-en="Contact">Kontak</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-2 ms-lg-3">
+                    <button class="language-btn" id="languageToggle" aria-label="Switch language">EN</button>
+                    <a href="documents/Prayugo Alfarizi-CV.pdf"
+                        class="btn btn-primary-custom btn-sm"
+                        target="_blank" rel="noopener">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+        <!-- Grid bg overlay -->
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+
+        <div class="container">
+            <div class="row align-items-center min-vh-100 g-5">
+
+                <div class="col-lg-7">
+                    <div class="availability" data-aos="fade-down" data-aos-duration="600">
+                        <span class="status-dot"></span>
+                        <span data-id="Terbuka untuk peluang kerja" data-en="Open to opportunities">
+                            Terbuka untuk peluang kerja
+                        </span>
+                    </div>
+
+                    <p class="hero-greeting mt-4" data-aos="fade-up" data-aos-delay="100"
+                        data-id="Halo, perkenalkan saya" data-en="Hello, I'm">
+                        Halo, perkenalkan saya
+                    </p>
+
+                    <h1 data-aos="fade-up" data-aos-delay="150">Prayugo Alfarizi<span>.</span></h1>
+
+                    <h2 class="hero-role" data-aos="fade-up" data-aos-delay="200">
+                        <span class="typing-text" id="typingText"></span><span class="cursor" aria-hidden="true"></span>
+                    </h2>
+
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="250"
+                        data-id="Web Developer lulusan Rekayasa Perangkat Lunak dengan pengalaman mengembangkan aplikasi berbasis web menggunakan Laravel, PHP, dan MySQL. Berfokus pada pengembangan sistem informasi, pengelolaan database, dan integrasi aplikasi."
+                        data-en="A Web Developer graduate in Software Engineering with experience building web applications using Laravel, PHP, and MySQL. Focused on information systems development, database management, and application integration.">
+                        Web Developer lulusan Rekayasa Perangkat Lunak dengan pengalaman mengembangkan aplikasi berbasis web menggunakan Laravel, PHP, dan MySQL. Berfokus pada pengembangan sistem informasi, pengelolaan database, dan integrasi aplikasi.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3 mt-4 hero-cta" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#projects" class="btn btn-primary-custom"
+                            data-id="Lihat Proyek" data-en="View Projects">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                            Lihat Proyek
+                        </a>
+                        <a href="#contact" class="btn btn-outline-custom"
+                            data-id="Hubungi Saya" data-en="Contact Me">
+                            Hubungi Saya
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="350">
+                        <div class="stat-item">
+                            <span class="stat-number">2<span>+</span></span>
+                            <span class="stat-label" data-id="Tahun Belajar" data-en="Years Learning">Tahun Belajar</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">2<span>+</span></span>
+                            <span class="stat-label" data-id="Proyek Selesai" data-en="Projects Done">Proyek Selesai</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">6<span>+</span></span>
+                            <span class="stat-label" data-id="Teknologi" data-en="Technologies">Teknologi</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                        <a href="https://github.com/yugoalfrzi" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/prayugo-alfarizi-13baa7413" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="alfariziprayugo@gmail.com" aria-label="Email">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            Email
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile card column -->
+                <div class="col-lg-5 text-center mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+                    <div class="profile-wrapper">
+                        <div class="profile-placeholder" role="img" aria-label="Prayugo Alfarizi">
+                            <img src="assets/profile/FOTO.jpeg" alt="Prayugo Alfarizi" class="profile-image" loading="lazy">
+                        </div>
+
+                        <!-- Floating badges -->
+                        <div class="float-card float-card-1" aria-hidden="true">
+                            <span class="float-dot"></span> Laravel Expert
+                        </div>
+                        <div class="float-card float-card-2" aria-hidden="true">
+                            <span class="float-dot green"></span> Web development
+                        </div>
+                        <div class="float-card float-card-3" aria-hidden="true">
+                            <span class="float-dot accent"></span> PHP & MySQL
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <p class="section-label" data-aos="fade-up">01 / ABOUT</p>
+            <div class="section-line" data-aos="fade-up" data-aos-delay="50"></div>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100"
+                data-id="Tentang Saya" data-en="About Me">Tentang Saya</h2>
+
+            <div class="about-grid">
+                <div class="content-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card-label">Bio</div>
+                    <p data-id="Saya merupakan lulusan Rekayasa Perangkat Lunak dari SMK Pusdikhubad Cimahi dengan pengalaman magang sebagai Web Developer di Dinas Sosial Provinsi Jawa Barat. Selama magang, saya terlibat dalam pengembangan SI LASKAR, mulai dari analisis kebutuhan, perancangan sistem, pengembangan fitur, pengelolaan database, hingga pengujian dan presentasi aplikasi. Saya memiliki ketertarikan pada pengembangan web, khususnya menggunakan Laravel dan PHP."
+                        data-en="I am a Software Engineering graduate from SMK Pusdikhubad Cimahi with internship experience as a Web Developer at the West Java Provincial Social Services Agency. During my internship, I contributed to SI LASKAR, covering requirements analysis, system design, feature development, database management, testing, and application presentations. I am interested in web development, particularly using Laravel and PHP.">
+                        Saya merupakan lulusan Rekayasa Perangkat Lunak dari SMK Pusdikhubad Cimahi dengan pengalaman magang sebagai Web Developer di Dinas Sosial Provinsi Jawa Barat. Selama magang, saya terlibat dalam pengembangan SI LASKAR, mulai dari analisis kebutuhan, perancangan sistem, pengembangan fitur, pengelolaan database, hingga pengujian dan presentasi aplikasi. Saya memiliki ketertarikan pada pengembangan web, khususnya menggunakan Laravel dan PHP.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎓</span>
+                            <div>
+                                <strong data-id="Pendidikan" data-en="Education">Pendidikan</strong>
+                                <p data-id="Rekayasa Perangkat Lunak" data-en="Software Engineering">SMK Pusdikhubad Cimahi - Rekayasa Perangkat Lunak | 2023 - 2026</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">📍</span>
+                            <div>
+                                <strong data-id="Lokasi" data-en="Location">Lokasi</strong>
+                                <p>Kota cimahi, Jawa Barat, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">💼</span>
+                            <div>
+                                <strong data-id="Pengalaman" data-en="Experience">Pengalaman</strong>
+                                <p data-id="Web Developer Intern — Dinas Sosial Jabar" data-en="Web Developer Intern — Dinas Sosial Jabar">Web Developer Intern — Dinas Sosial Jabar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <p class="section-label" data-aos="fade-up">02 / SKILLS</p>
+            <div class="section-line" data-aos="fade-up" data-aos-delay="50"></div>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100"
+                data-id="Keahlian Teknis" data-en="Technical Skills">Keahlian Teknis</h2>
+
+            <div class="skill-groups">
+
+                <!-- Backend -->
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-group-header">
+                        <span class="skill-group-icon">⚙️</span>
+                        <h3 class="skill-group-title">Backend Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-primary">PHP</span>
+                        <span class="skill-tag tag-primary">Laravel 12</span>
+                        <span class="skill-tag tag-primary">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-group-divider" aria-hidden="true"></div>
+
+                <!-- Frontend -->
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-group-header">
+                        <span class="skill-group-icon">🎨</span>
+                        <h3 class="skill-group-title">Frontend Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-default">HTML</span>
+                        <span class="skill-tag tag-default">CSS</span>
+                        <span class="skill-tag tag-default">JavaScript</span>
+                        <span class="skill-tag tag-default">Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="skill-group-divider" aria-hidden="true"></div>
+
+                <!-- Integration -->
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-group-header">
+                        <span class="skill-group-icon">🔗</span>
+                        <h3 class="skill-group-title">Integration</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-default">Google OAuth</span>
+                        <span class="skill-tag tag-default">Brevo Email Service</span>
+                    </div>
+                </div>
+
+                <div class="skill-group-divider" aria-hidden="true"></div>
+
+                <!-- Tools -->
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-group-header">
+                        <span class="skill-group-icon">🛠️</span>
+                        <h3 class="skill-group-title">Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-default">Git</span>
+                        <span class="skill-tag tag-default">GitHub</span>
+                        <span class="skill-tag tag-default">VS Code</span>
+                        <span class="skill-tag tag-default">XAMPP</span>
+                        <span class="skill-tag tag-default">Microsoft Office</span>
+                    </div>
+                </div>
+
+                <div class="skill-group-divider" aria-hidden="true"></div>
+
+                <!-- System Analysis -->
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-group-header">
+                        <span class="skill-group-icon">📐</span>
+                        <h3 class="skill-group-title">System Analysis &amp; Documentation</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag tag-default">Use Case Diagram</span>
+                        <span class="skill-tag tag-default">ERD</span>
+                        <span class="skill-tag tag-default">Activity Diagram</span>
+                        <span class="skill-tag tag-default">Sequence Diagram</span>
+                        <span class="skill-tag tag-default">Class Diagram</span>
+                    </div>
+                </div>
+
+                <div class="skill-group-divider" aria-hidden="true"></div>
+
+                <!-- Languages -->
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="350">
+                    <div class="skill-group-header">
+                        <span class="skill-group-icon">🌐</span>
+                        <h3 class="skill-group-title">Languages</h3>
+                    </div>
+                    <ul class="skill-lang-list">
+                        <li>
+                            <span class="lang-bullet" aria-hidden="true"></span>
+                            <span data-id="Bahasa Indonesia — Menguasai" data-en="Indonesian — Native">Bahasa Indonesia — Menguasai</span>
+                        </li>
+                        <li>
+                            <span class="lang-bullet" aria-hidden="true"></span>
+                            <span data-id="Bahasa Inggris — Dasar" data-en="English — Basic">Bahasa Inggris — Dasar</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+
+            <p class="section-label" data-aos="fade-up">03 / PROJECTS</p>
+            <div class="section-line" data-aos="fade-up" data-aos-delay="50"></div>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100"
+                data-id="Proyek Pilihan" data-en="Featured Projects">Proyek Pilihan</h2>
+
+            <p class="text-secondary mb-4" data-aos="fade-up" data-aos-delay="150"
+                data-id="Beberapa proyek yang pernah saya kembangkan."
+                data-en="Some projects I have developed.">
+                Beberapa proyek yang pernah saya kembangkan.
+            </p>
+
+            <div class="row g-4">
+
+                <!-- PROJECT 1 -->
+                <div class="col-lg-6 project-item" data-category="web laravel"
+                    data-aos="fade-up" data-aos-delay="100">
+
+                    <article class="project-card">
+
+                        <div class="project-gallery">
+                            <div class="main-image">
+                                <img src="assets/silaskar_page/dashboard.page.png"
+                                    alt="Dashboard SI LASKAR — sistem informasi LKS"
+                                    class="gallery-main"
+                                    data-gallery="laskar"
+                                    data-index="0"
+                                    loading="lazy">
+                                <span class="image-counter">1 / 3</span>
+                                <div class="image-overlay" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                </div>
+                            </div>
+
+                            <div class="thumbnail-list">
+                                <img src="assets/silaskar_page/dashboard.page.png"
+                                    class="gallery-thumb active"
+                                    data-gallery="laskar" data-index="0"
+                                    alt="Dashboard SI LASKAR" loading="lazy">
+                                <img src="assets/silaskar_page/pendaftaran.page.png"
+                                    class="gallery-thumb"
+                                    data-gallery="laskar" data-index="1"
+                                    alt="Pendaftaran SI LASKAR" loading="lazy">
+                                <img src="assets/silaskar_page/verifikasi.page.png"
+                                    class="gallery-thumb"
+                                    data-gallery="laskar" data-index="2"
+                                    alt="Verifikasi SI LASKAR" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-number">PROJECT 01</span>
+                            <h3>SI LASKAR</h3>
+                            <p data-id="Sistem informasi Layanan Sosial Kelembagaan dan Administrasi Lembaga Kesejahteraan Sosial berbasis web untuk mendukung proses pendaftaran, verifikasi, dan monitoring Lembaga Kesejahteraan Sosial."
+                                data-en="A Web-based Social Services Information System for Institutions and Administration of Social Welfare Institutions to support the registration, verification, and monitoring processes of Social Welfare Institutions.">
+                                Sistem informasi Layanan Sosial Kelembagaan dan Administrasi Lembaga Kesejahteraan Sosial berbasis web untuk mendukung proses pendaftaran, verifikasi, dan monitoring Lembaga Kesejahteraan Sosial.
+                            </p>
+                            <div class="tech-list">
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <button class="detail-btn"
+                                data-project="laskar"
+                                data-id="Lihat Detail Proyek" data-en="View Project Details">
+                                Lihat Detail Proyek
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="col-lg-6 project-item" data-category="web"
+                    data-aos="fade-up" data-aos-delay="200">
+
+                    <article class="project-card">
+
+                        <div class="project-gallery">
+                            <div class="main-image">
+                                <img src="assets/sipinjam_page/dashboard.png"
+                                    alt="Dashboard Sistem Peminjaman Alat"
+                                    class="gallery-main"
+                                    data-gallery="alat"
+                                    data-index="0"
+                                    loading="lazy">
+                                <span class="image-counter">1 / 3</span>
+                                <div class="image-overlay" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                </div>
+                            </div>
+
+                            <div class="thumbnail-list">
+                                <img src="assets/sipinjam_page/dashboard.png"
+                                    class="gallery-thumb active"
+                                    data-gallery="alat" data-index="0"
+                                    alt="Dashboard Peminjaman" loading="lazy">
+                                <img src="assets/sipinjam_page/peminjaman.png"
+                                    class="gallery-thumb"
+                                    data-gallery="alat" data-index="1"
+                                    alt="Form Peminjaman" loading="lazy">
+                                <img src="assets/sipinjam_page/pengembalian.png"
+                                    class="gallery-thumb"
+                                    data-gallery="alat" data-index="2"
+                                    alt="Pengembalian Alat" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-number">PROJECT 02</span>
+                            <h3>SIPINJAM</h3>
+                            <p data-id="Aplikasi berbasis web untuk mengelola proses peminjaman dan pengembalian alat."
+                                data-en="A web-based application for managing equipment borrowing and return processes.">
+                                Aplikasi berbasis web untuk mengelola proses
+                                peminjaman dan pengembalian alat.
+                            </p>
+                            <div class="tech-list">
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <button class="detail-btn"
+                                data-project="alat"
+                                data-id="Lihat Detail Proyek" data-en="View Project Details">
+                                Lihat Detail Proyek
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div class="custom-modal" id="projectModal"
+        role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+
+        <div class="modal-content-custom">
+            <button class="modal-close" id="closeModal" aria-label="Tutup">&times;</button>
+
+            <span class="modal-tag" id="modalProjectNumber"></span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+
+            <div class="modal-divider"></div>
+
+            <div class="modal-tech-section">
+                <span class="modal-section-label" data-id="Teknologi Digunakan" data-en="Technologies Used">Teknologi Digunakan</span>
+                <div class="tech-list" id="modalTech"></div>
+            </div>
+
+            <div class="modal-features" id="modalFeatures"></div>
+        </div>
+    </div>
+
+    <!-- IMAGE LIGHTBOX -->
+    <div class="lightbox" id="lightbox"
+        role="dialog" aria-modal="true" aria-label="Pratinjau gambar proyek" aria-hidden="true">
+
+        <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">&times;</button>
+        <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Gambar sebelumnya">&#10094;</button>
+        <div class="lightbox-img-wrap">
+            <img id="lightboxImage" src="" alt="Screenshot proyek">
+        </div>
+        <button class="lightbox-nav next" id="lightboxNext" aria-label="Gambar berikutnya">&#10095;</button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <p class="section-label" data-aos="fade-up">04 / EXPERIENCE</p>
+            <div class="section-line" data-aos="fade-up" data-aos-delay="50"></div>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100"
+                data-id="Pengalaman" data-en="Experience">Pengalaman</h2>
+
+            <div class="timeline" data-aos="fade-up" data-aos-delay="150">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>                
+                    <div class="content-card timeline-card">
+                        <span class="timeline-badge">JUL 2025 — NOV 2025</span>
+                        <h3>Web Developer Intern</h3>
+                        <p class="company">Dinas Sosial Provinsi Jawa Barat</p>
+                        <p class="mt-3"
+                            data-id="Mengembangkan SI LASKAR, sistem informasi pendaftaran dan verifikasi Lembaga Kesejahteraan Sosial (LKS) menggunakan Laravel 12, MySQL, dan Bootstrap. Berkontribusi dalam pengembangan fitur multi-role, verifikasi berjenjang kabupaten/kota hingga provinsi, integrasi Google OAuth dan Brevo, serta perancangan database dan dokumentasi teknis. Melakukan pengujian dan presentasi aplikasi kepada pihak terkait. Selain itu, membantu proses verifikasi dan pencocokan data desil melalui SIKS-NG."
+                            data-en="Developed SI LASKAR, a registration and verification information system for Social Welfare Institutions (LKS) using Laravel 12, MySQL, and Bootstrap. Contributed to multi-role features, multi-level verification from regency/city to provincial level, Google OAuth and Brevo integration, database design, and technical documentation. Participated in application testing and presentations to relevant stakeholders. Also assisted with decile data verification and matching through SIKS-NG.">
+                    
+                            Mengembangkan SI LASKAR, sistem informasi pendaftaran dan verifikasi Lembaga Kesejahteraan Sosial (LKS) menggunakan Laravel 12, MySQL, dan Bootstrap. Berkontribusi dalam pengembangan fitur multi-role, verifikasi berjenjang kabupaten/kota hingga provinsi, integrasi Google OAuth dan Brevo, serta perancangan database dan dokumentasi teknis. Melakukan pengujian dan presentasi aplikasi kepada pihak terkait. Selain itu, membantu proses verifikasi dan pencocokan data desil melalui SIKS-NG.
+                        </p>
+                        <div class="tech-list mt-3">
+                            <span>Laravel 12</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>Google OAuth</span>
+                            <span>Brevo</span>
+                            <span>SIKS-NG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="contact-wrapper">
+                <p class="section-label" data-aos="fade-up">05 / CONTACT</p>
+                <div class="section-line" data-aos="fade-up" data-aos-delay="50"></div>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100"
+                    data-id="Mari Terhubung" data-en="Let's Connect">Let's Connect</h2>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="150">
+                    <p data-id="Tertarik bekerja sama atau ingin berdiskusi mengenai pengembangan aplikasi web? Silakan hubungi saya melalui kontak berikut."
+                        data-en="Interested in working together or discussing web application development? Feel free to contact me through the following channels.">
+                        Tertarik bekerja sama atau ingin berdiskusi mengenai pengembangan aplikasi web? Silakan hubungi saya melalui kontak berikut.
+                    </p>
+
+                    <a href="mailto:alfariziprayugo@gmail.com" class="btn btn-primary-custom btn-lg">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        alfariziprayugo@gmail.com
+                    </a>
+
+                    <div class="contact-links">
+                        <a href="https://linkedin.com/in/prayugo-alfarizi-13baa7413" target="_blank" rel="noopener" class="contact-link-item">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="documents/Prayugo Alfarizi-CV.pdf" target="_blank" rel="noopener" class="contact-link-item">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+                            Resume / CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-brand">PA<span>.</span></span>
+
+                <p>
+                    © 2026 Prayugo Alfarizi. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" aria-label="Kembali ke atas">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
