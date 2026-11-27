@@ -168,6 +168,11 @@ body::before {
     background: var(--primary-soft);
 }
 
+/* Separator between nav links and actions */
+.navbar-separator {
+    display: none;
+}
+
 /* =========================
    BUTTONS
 ========================= */
@@ -1543,10 +1548,21 @@ footer {
    RESPONSIVE
 ========================= */
 
+@media (min-width: 992px) {
+    .navbar-separator {
+        display: block;
+        width: 1px;
+        height: 22px;
+        background: var(--border);
+        margin: 0 12px;
+    }
+}
+
 @media (max-width: 991px) {
     .navbar-nav { padding-top: 14px; }
     .navbar .d-flex { margin: 14px 0; }
     .float-card { display: none; }
+    .navbar-separator { display: none; }
 
     .about-grid { grid-template-columns: 1fr; }
 }

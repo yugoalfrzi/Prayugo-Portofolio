@@ -5,7 +5,7 @@
 AOS.init({
     duration: 700,
     easing: 'ease-out-cubic',
-    once: true,
+    once: false,
     offset: 60,
     disable: 'mobile'
 });
@@ -18,7 +18,8 @@ AOS.init({
 const mainNav = document.getElementById('mainNav');
 
 function updateNav() {
-    mainNav.classList.toggle('scrolled', window.scrollY > 50);
+    const scrolled = window.scrollY > 50;
+    mainNav.classList.toggle('scrolled', scrolled);
 }
 
 window.addEventListener('scroll', updateNav, { passive: true });
